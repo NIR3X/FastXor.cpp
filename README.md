@@ -2,6 +2,8 @@
 
 FastXor is a C++ class that provides a fast XOR encryption method using SIMD instructions. It can be used to efficiently XOR data with a key.
 
+[Intrinsics Guide](https://www.laruence.com/sse/#expand=5655&techs=SSE2,AVX,AVX2)
+
 ## Features
 
 - SIMD-based XOR encryption for improved performance.
