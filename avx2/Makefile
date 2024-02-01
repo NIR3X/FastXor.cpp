@@ -1,6 +1,6 @@
 AR = ar
 CXX = g++
-CXXFLAGS = -std=c++2a -Wall -O2 -march=x86-64-v3 -fno-rtti
+CXXFLAGS = -std=c++2a -Wall -O2 -mavx2 -fno-rtti
 LDFLAGS = -s -static -ladvapi32
 
 SRC = FastXor.cpp
