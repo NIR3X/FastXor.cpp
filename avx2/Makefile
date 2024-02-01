@@ -1,7 +1,7 @@
 AR = ar
 CXX = g++
 CXXFLAGS = -std=c++2a -Wall -O2 -mavx2 -fno-rtti
-LDFLAGS = -s -static -ladvapi32
+LDFLAGS = -s -static
 
 SRC = FastXor.cpp
 OBJ = $(SRC:.cpp=.o)
