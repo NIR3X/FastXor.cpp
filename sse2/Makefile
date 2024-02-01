@@ -7,7 +7,7 @@ SRC = FastXor.cpp
 OBJ = $(SRC:.cpp=.o)
 DEST = FastXor.a
 TEST_SRC = FastXorTest.cpp
-TEST_DEST = FastXorTest.exe
+TEST_DEST = FastXorTest
 
 build: $(OBJ)
 	$(AR) r -o $(DEST) $^
@@ -19,4 +19,4 @@ build-test: build
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
 clean:
-	rm -f $(OBJ) $(DEST) $(TEST_DEST)
+	rm -f $(OBJ) $(DEST) $(TEST_DEST) $(TEST_DEST).exe
