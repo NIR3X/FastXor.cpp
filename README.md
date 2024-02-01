@@ -14,7 +14,7 @@ To use this package, you can clone the repository and compile it using a C++ com
 
 ```bash
 git clone https://github.com/NIR3X/FastXor.cpp
-cd FastXor.cpp
+cd FastXor.cpp/sse2 # or /avx
 make
 ```
 
