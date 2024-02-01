@@ -3,12 +3,12 @@
 void CFastXor::Xor(uint8_t* data, size_t dataSize, const uint8_t* key, size_t keySize) {
 	size_t dataSizeAligned = dataSize & ~0x0f;
 	for (size_t i = 0; i < dataSizeAligned; i += 16) {
-		__m128i_u* dataPtr = (__m128i_u*)(data + i);
+		__m128i* dataPtr = (__m128i*)(data + i);
 		_mm_storeu_si128(
 			dataPtr,
 			_mm_xor_si128(
 				_mm_loadu_si128(dataPtr),
-				_mm_loadu_si128((__m128i_u*)(key + (i % keySize)))
+				_mm_loadu_si128((__m128i*)(key + (i % keySize)))
 			)
 		);
 	}

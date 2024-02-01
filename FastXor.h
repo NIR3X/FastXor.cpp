@@ -1,6 +1,6 @@
 #pragma once
 
-#include <windows.h>
+#include <emmintrin.h>
 #include <cstdint>
 #include <string>
 #include <vector>
